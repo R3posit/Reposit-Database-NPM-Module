@@ -6,26 +6,31 @@ npm install reposit.db
 Here's a quick guide on how to use reposit.db:
 
 Require and Initialize
-
+```
 const R3posit = require('reposit.db');
 const reposit = new R3posit('mytest.db'); // You can specify the database file name
+```
 
 **#Add Data**
-
+```
 reposit.add('key', 'value');
 const value = reposit.get('key');
 console.log(`Value: ${value}`);
-
+```
 **Update Data**
+```
 reposit.update('key', 'new value');
+```
 
 **Delete Data**
-
+```
 reposit.delete('key');
+```
 
 **Close Database**
-
+```
 reposit.close();
+```
 
 **API**
 ```
